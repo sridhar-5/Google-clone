@@ -143,8 +143,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
+ul {
+  display: flexbox;
+}
 ul li {
   list-style-type: none;
   display: inline-block;
@@ -177,4 +181,96 @@ ul li {
 }
 .right-section {
   margin-right: 20px;
+}
+
+/*
+observation : The wierd behaviour start when the browser screen width is less than 700px
+*/
+
+@media (max-width: 700px) {
+  .search-text {
+    width: 290px;
+    border-radius: 0px;
+    height: 35px;
+    margin-top: 25px;
+    font-size: 15px;
+    border-width: 2px 0px 2px 0px;
+    border-style: solid;
+    border-color: grey;
+  }
+  .image-logo {
+    display: flex;
+    margin-top: 175px;
+    width: 250px;
+  }
+  .Google-search {
+    display: flex;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+  }
+
+  .lucky {
+    display: flex;
+    margin-right: 30px;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    background-color: white;
+    width: 120px;
+    height: 40px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f2f2f2;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .left-section,
+  .right-section {
+    display: flex;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    margin: 10px 10px 10px 10px;
+  }
+  .right-section {
+    margin-right: 20px;
+  }
+
+  .lang-text {
+    display: flex;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .languages {
+    flex-direction: column;
+  }
 }
