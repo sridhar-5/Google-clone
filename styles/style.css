@@ -143,18 +143,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-}
-
-ul {
-  display: flexbox;
 }
 ul li {
   list-style-type: none;
   display: inline-block;
   margin: 0px 2px 0px 2px;
 }
-
+.section-1 {
+  float: left;
+}
+.section-2 {
+  float: right;
+}
 .footer {
   position: absolute;
   bottom: 0px;
