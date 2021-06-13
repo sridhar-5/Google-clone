@@ -73,10 +73,14 @@
   border-radius: 0px;
   height: 35px;
   margin-top: 25px;
-  font-size: 25px;
+  font-size: 15px;
   border-width: 2px 0px 2px 0px;
   border-style: solid;
   border-color: grey;
+}
+
+.search-text:focus {
+  outline: none;
 }
 .search-logo {
   display: flex;
