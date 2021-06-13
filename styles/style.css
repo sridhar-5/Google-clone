@@ -115,6 +115,7 @@
   border-radius: 5px;
   border: none;
   font-size: 15px;
+  background-color: white;
 }
 .Google-search:hover,
 .lucky:hover {
@@ -125,6 +126,7 @@
   display: flex;
   margin-right: 30px;
   padding: 10px;
+  background-color: white;
   border-radius: 5px;
   border: none;
   font-size: 15px;
