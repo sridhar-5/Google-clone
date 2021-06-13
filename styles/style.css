@@ -63,7 +63,7 @@
   display: flex;
   margin-top: 175px;
 }
-.searchbar {
+/* .searchbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,6 +106,44 @@
   background-color: white;
   border: none;
   padding: 0px;
+} */
+
+.searchbar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  border: 0.1px solid #ddd;
+  border-radius: 30px;
+  height: 25px;
+}
+.search-logo {
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+}
+.search-text {
+  flex-grow: 1;
+  outline: none;
+  height: 20px;
+  padding: 2px 0;
+  border: none;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+}
+.mic {
+  border: none;
+  background-color: white;
+}
+.mic-button {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: none;
 }
 
 .search-buttons {
@@ -188,16 +226,19 @@ observation : The wierd behaviour start when the browser screen width is less th
 */
 
 @media (max-width: 700px) {
-  .search-text {
-    width: 290px;
-    border-radius: 0px;
-    height: 35px;
-    margin-top: 25px;
-    font-size: 15px;
-    border-width: 2px 0px 2px 0px;
-    border-style: solid;
-    border-color: grey;
+  .searchbar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    border: 0.1px solid #ddd;
+    border-radius: 30px;
+    height: 20px;
   }
+
   .image-logo {
     display: flex;
     margin-top: 175px;
@@ -211,7 +252,7 @@ observation : The wierd behaviour start when the browser screen width is less th
     border: none;
     font-size: 11px;
     background-color: white;
-    width: 100px;
+    width: 110px;
     height: 40px;
   }
 
@@ -264,6 +305,7 @@ observation : The wierd behaviour start when the browser screen width is less th
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 50px;
   }
   .list {
     display: flex;
