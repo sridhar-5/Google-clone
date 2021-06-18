@@ -35,7 +35,9 @@ async function checkhash(e) {
     console.log("redirect");
     query = atob(location.hash);
     await typingeffect(query);
-    location.replace(`https://google.com/search?q=${query}`);
+    location.replace(
+      `https://google.com/search?q=${encodeURIComponent(query)}`
+    );
     // redirect();
   } else {
     // generatelink();
