@@ -30,12 +30,34 @@ window.addEventListener("load", checkhash);
 //we check if the has for that page exist or not if it exists we redirect
 //if not we assume the user wants to generate a new link
 
-function checkhash(e) {
+async function checkhash(e) {
   if (location.hash?.length > 1) {
     console.log("redirect");
+    query = atob(location.hash);
+    await typingeffect(query);
+    location.replace(`https://google.com/search?q=${query}`);
     // redirect();
   } else {
-    console.log("hello");
     // generatelink();
+    console.log("hello");
+    generateLink();
   }
+}
+
+function generateLink() {
+  searchtext.addEventListener("input", (e) => {
+    location.hash = btoa(e.target.value);
+    searchbutton.textContent = "Copy Link";
+  });
+
+  searchbutton.addEventListener("click", CopyLinkClipBoard);
+}
+
+async function CopyLinkClipBoard(e) {
+  await navigator.clipboard.writeText(location.href);
+  let oritext = searchbutton.textContent;
+  searchbutton.textContent = "Copied!";
+  setTimeout(() => {
+    searchbutton.textContent = oritext;
+  }, 1000);
 }
