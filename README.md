@@ -6,4 +6,4 @@ Project idea Credits: @radiantly
 
 <img src="looks.gif" width="100%" height="100%">
 
-Special thanks for @radiantly again for being extremely helpful.
+Special thanks to @radiantly again for being extremely helpful.
