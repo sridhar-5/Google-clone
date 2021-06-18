@@ -4,6 +4,6 @@ This Project is firstly the a clone of the Google home page made for 'The Odin P
 
 Project idea Credits: @radiantly
 
-![kinda demo](looks.gif)
+<img src="looks.gif" width="100%" height="100%">
 
 Special thanks for @radiantly again for being extremely helpful.
