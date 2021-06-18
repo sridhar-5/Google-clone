@@ -9,9 +9,9 @@ const searchbutton = document.querySelector(".Google-search");
 //one afetr the other with some sleep time to bring in the effect of typing
 
 async function typingeffect(input_text) {
-  let delay = 300 + Math.floor(Math.random() * 50);
+  let delay = 100 + Math.floor(Math.random() * 50);
   for (let letter of input_text) {
-    searchtext.textContent = searchtext.textContent + letter;
+    searchtext.value = searchtext.value + letter;
     await sleep(delay);
   }
   await sleep(1000);
@@ -33,10 +33,10 @@ window.addEventListener("load", checkhash);
 async function checkhash(e) {
   if (location.hash?.length > 1) {
     console.log("redirect");
-    query = atob(location.hash.substr(1));
-    await typingeffect(query);
+    const textquery = atob(location.hash.substr(1));
+    await typingeffect(textquery);
     location.replace(
-      `https://google.com/search?q=${encodeURIComponent(query)}`
+      `https://google.com/search?q=${encodeURIComponent(textquery)}`
     );
     // redirect();
   } else {
