@@ -33,7 +33,7 @@ window.addEventListener("load", checkhash);
 async function checkhash(e) {
   if (location.hash?.length > 1) {
     console.log("redirect");
-    query = atob(location.hash);
+    query = atob(location.hash.substr(1));
     await typingeffect(query);
     location.replace(
       `https://google.com/search?q=${encodeURIComponent(query)}`
